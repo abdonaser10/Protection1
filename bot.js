@@ -35,6 +35,14 @@ client.on('ready', () => {
 
 });
 
+client.on('ready',  () => {
+    console.log('تم تشغيل :Broadcast  ');
+    console.log(`Logged in as * [ " ${client.user.username} " ] servers! [ " ${client.guilds.size} " ]`);
+    console.log(`Logged in as * [ " ${client.user.username} " ] Users! [ " ${client.users.size} " ]`);
+    console.log(`Logged in as * [ " ${client.user.username} " ] channels! [ " ${client.channels.size} " ]`);
+  });
+
+
 
 
 client.on("guildMemberAdd", member => {
